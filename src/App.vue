@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div style="height:300px;width:600px;">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+import linChart from './components/barChart/index'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld:linChart
   }
 }
 </script>
